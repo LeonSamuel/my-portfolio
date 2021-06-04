@@ -7,3 +7,29 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+.center-block{
+  width: 100%;
+  height: auto;
+}
+
+.headerpic {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#contactContainer {
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color:rgba(153, 152, 152, 0.76);
+  border: none;
+}

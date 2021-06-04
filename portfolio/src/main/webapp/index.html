@@ -3,17 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div id="headerpic">
+      <img class="center-block" src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="Minimal pencils on yellow paper">
+        <div class="centered">
+          <h1>My Portfolio</h1>
+          <p>This is my portfolio. It's not much but it's mine.</p>
+          <p>Click <a href="https://github.com/LeonSamuel">here</a> to see what I've dabbled in so far.</p>
+          <!--<p>Click here to get a random message:</p>
+          <button onclick="addRandomGreeting()">Hello</button>
+          <div id="greeting-container"></div>-->
+        </div>
     </div>
+
+    <div id="contactContainer"> 
+      <form id="form" action="" method="get">
+          <fieldset>
+            <legend id="legend">Any Questions?</legend>
+            <div class="collecting">
+              <label for="text_input"></label>
+              <input type="text" placeholder="First and Last Name" id="text_input" required>
+            </div>
+            <br>  
+            <div class="collecting">
+              <label for="numerical_input"></label>
+              <input type="number" placeholder="Phone Number" id="numerical_input" required>
+            </div>
+            <br>  
+            <div class="collecting">
+              <label for="email_input"></label>
+              <input type="email" placeholder="Email" id="email_input" required>
+            </div>
+            <br>  
+            <div class="collecting"> 
+              <label for="textarea1"></label>
+              <input type="text" placeholder="Enter Questions Here" id="textarea1" size="40" rows = "3" required >
+            </div>
+            <br>  
+            <button type="button" class="btn btn-dark">Submit</button></a>
+          </fieldset>
+        </form>
+  </div>  
   </body>
-</html>
